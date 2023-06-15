@@ -1,0 +1,108 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
+        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T" crossorigin="anonymous">
+</head>
+
+<body>
+    <div class="container">
+        <div class="rounded h-100 d-flex align-items-center mx-md-n5">
+            <div class="col px-md-5">
+                <div class="p-3 block rounded border bg-light">
+                    <p class="col px-md-4 font-weight-bold">Баланс</p>
+                    <div class=" rounded border bg-light">
+                        <p class="col px-md-4"> <span id="balance"></span> грн.</p>
+                    </div>
+                    <p class="col px-md-4 font-weight-bold mt-4">Пиво</p>
+                    <div class=" rounded border bg-light">
+                        <p class="col px-md-4"> <span id='P-eshkaBeer'></span> шт. </p>
+                    </div>
+                    <p class="col px-md-4 font-weight-bold mt-4">Вино</p>
+                    <div class=" rounded border bg-light">
+                        <p class="col px-md-4"> <span id='P-eshkaWine'></span> шт.</p>
+                    </div>
+
+                    <p class="col px-md-4 font-weight-bold mt-4">Пепсі</p>
+                    <div class=" rounded border bg-light">
+                        <p class="col px-md-4"> <span id='P-eshkaPepsi'></span> шт. </p>
+                    </div>
+                </div>
+
+            </div>
+            <div class="col px-md-5">
+                <div class="p-3 block rounded border bg-light">
+                    <p class="col pl-4 font-weight-bold">Кількість</p>
+                    <form id='form' name="f1" class="h-100">
+                        <div class="rounded  pl-3  bg-light" id="input-count__container">
+                            <input class="w-100 input rounded" id="number" type="number">
+                        </div>
+                        <div class="form-check d-inline-block m-3">
+                            <input class="form-check-input test" name="name" type="radio" value="Пиво:" id="defaultCheck1">
+                            <label class="form-check-label" for="defaultCheck1">
+                                Пиво
+                            </label>
+                        </div>
+
+                        <div class="form-check d-inline-block m-2">
+                            <input class="form-check-input test" name="name" type="radio" value="Вино:" id="defaultCheck2">
+                            <label class="form-check-label" for="defaultCheck2">
+                                Вино
+                            </label>
+                        </div>
+
+                        <div class="form-check d-inline-block m-2">
+                            <input class="form-check-input test" name="name" type="radio" value="Пепсі:" id="defaultCheck3">
+                            <label class="form-check-label" for="defaultCheck3">
+                                Пепсі
+                            </label>
+                        </div>
+
+                        <button type="button" id="dodat" class="btn btn-secondary ml-3 w-50  ">Додати</button>
+                        <div class="form-group w-75 ml-3 ">
+                            <div style="height:125px" id="area" class="form-control bg-light  rounded-0 mt-4  w-100">
+                                <div id="1"><p class="beer1"></p></div>
+                                <div id="2"><p class="wine1"></p></div>
+                                <div id="3"><p class="pepsi1"></p></div>
+
+                            </div>
+                        </div>
+
+                        <button id="buy" type="button" class="btn btn-secondary ml-3 w-50 ">Купити</button>
+
+                    </form>
+                </div>
+            </div>
+            <div class="col px-md-5 ">
+                <div id="block1" class="p-3 block rounded border bg-light">
+                    <p id='pivo'></p>
+                    <p id='wine'></p>
+                    <p id='pepsi'></p>
+                    <p id="totalCost"></p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+
+    <script src="script.js"></script>
+
+    <script src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+        integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+        integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/js/bootstrap.min.js"
+        integrity="sha384-JjSmVgyd0p3pXB1rRibZUAYoIIy6OrQ6VrjIEaFf/nJGzIxFDsf4x0xIM+B07jRM"
+        crossorigin="anonymous"></script>
+
+</body>
+
+</html>
